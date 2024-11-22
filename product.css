@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.sort-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Product Item */
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 2s ease forwards;
+    transition: transform 3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+
+.product-item button {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    color: white;
+    background-color: #007bff;
+    border-radius: 10px; 
+    font-size: 16px;
+    border: none;
+    padding: 15px 30px; 
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    width: 200px;; 
+    text-align: center;
+}
+
+.product-item button i {
+    font-size: 18px; 
+    margin-right: 5px; 
+}
+
+.product-item button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.product-item button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr; 
+    }
+}

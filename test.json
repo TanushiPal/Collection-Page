@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "image": "img/one.jpg",
+        "title": "main",
+        "price":500
+    },
+    {
+        "id": 1,
+        "image": "img/two.webp",
+        "title": "Th",
+        "price": 1000
+    },
+    {
+        "id": 2,
+        "image": "img/third.jpeg",
+        "title": "main",
+        "price": 2000
+    },
+    {
+        "id": 3,
+        "image": "img/fourth.jpg",
+        "title": "main",
+        "price": 3000
+    },
+    {
+        "id": 4,
+        "image": "img/fourth.jpg",
+        "title": "main",
+        "price": 1500
+    },
+    {
+        "id": 5,
+        "image": "img/fourth.jpg",
+        "title": "main",
+        "price": 1920
+    },
+    {
+        "id": 6,
+        "image": "img/fourth.jpg",
+        "title": "main",
+        "price": 7620
+    }
+]

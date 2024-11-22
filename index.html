@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>All Collection</h1>
+            <select class="sort-dropdown">
+                <option value="default">Sort By</option>
+                <option value="price">Price</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </header>
+        <main class="main-content">
+            <button id="loadButton" class="load-button">Load Products</button>
+            <div id="dot-container" class="dot-container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById("loadButton").addEventListener("click", function() {
+            const loadButton = document.getElementById("loadButton");
+            const dotContainer = document.getElementById("dot-container");
+          
+
+            
+            loadButton.style.borderRadius = "50%"; 
+            loadButton.style.width = "60px";
+            loadButton.style.height = "60px"; 
+
+                      dotContainer.style.display = "flex"; 
+
+            
+            setTimeout(function() {
+                window.location.href = "productpage.html"; 
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

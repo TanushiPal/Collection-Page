@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #333;
+}
+
+.sort-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.load-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #007bff, #00d4ff);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.load-button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.load-button:hover {
+    background: linear-gradient(to right, #0056b3, #00a1cc);
+}
+
+/* Dot Container */
+.dot-container {
+    display: none;  /* Initially hidden */
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* Individual Dot */
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Dot Animations */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Move dot up */
+    }
+    100% {
+        transform: translateY(0); /* Move dot back down */
+    }
+}
+
+/* Delay for each dot */
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
